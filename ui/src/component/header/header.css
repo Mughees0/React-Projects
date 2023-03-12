@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid orange;
+}
+
+.header > input {
+  height: 20px;
+  margin: 5px;
+}
+
+.btn-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: aqua;
+}

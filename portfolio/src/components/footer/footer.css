@@ -1,0 +1,20 @@
+.ftr-container {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  margin-top: 20px;
+}
+.ftr-span {
+  padding-left: 20px;
+}
+
+.ftr-ul {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  width: 130px;
+  padding-right: 50px;
+}

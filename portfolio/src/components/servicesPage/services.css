@@ -1,0 +1,40 @@
+.ser-sect {
+  background-color: gray;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ser-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 95vw;
+  height: 500px;
+  border: 1px solid orange;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .ser-sect {
+    background-color: gray;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ser-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 95vw;
+    height: 180vh;
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
