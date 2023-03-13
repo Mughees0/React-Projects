@@ -1,6 +1,6 @@
 import "./App.css";
 
-import useCountry from "./useCountry";
+import useCountry from "./hook/useCountry";
 
 function App() {
   const [error, data] = useCountry("finland");

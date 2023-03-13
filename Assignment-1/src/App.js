@@ -4,7 +4,7 @@ import Main from "./components/mainPage/Main";
 import Services from "./components/servicesPage/Services";
 import Stack from "./components/techStack/Stack";
 import Footer from "./components/footer/Footer.jsx";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
