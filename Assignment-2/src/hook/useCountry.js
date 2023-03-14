@@ -12,11 +12,6 @@ function useCountry(name) {
       });
     }
     dataFetch();
-
-    return () => {
-      setData([]);
-      setError([]);
-    };
   }, [name]);
   return [error, data];
 }

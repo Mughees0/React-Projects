@@ -11,10 +11,6 @@ function Profile({ data }) {
   );
 }
 
-function Segment({ data }) {
-  return;
-}
-
 function Row({ data }) {
   return (
     <>
