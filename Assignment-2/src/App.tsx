@@ -3,7 +3,7 @@ import "./App.css";
 import useCountry from "./hook/useCountry";
 
 function App() {
-  const [error, data] = useCountry("finland");
+  const [error, data] = useCountry("Finland");
 
   console.log("Data: ", data);
   console.log("Error: ", error);
