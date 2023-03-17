@@ -1,6 +1,7 @@
 import React from "react";
+import { HeaderProps } from "./Header";
 
-function Search({ value, onValChange }) {
+function Search({ value, onValChange }: HeaderProps) {
   return (
     <>
       <input

@@ -3,7 +3,12 @@ import "./header.css";
 import Search from "./Search";
 import Features from "./Features";
 
-function Header({ value, onValChange }) {
+export type HeaderProps = {
+  value: string;
+  onValChange: React.Dispatch<React.SetStateAction<string>>;
+};
+
+function Header({ value, onValChange }: HeaderProps) {
   return (
     <header className="header">
       <Search value={value} onValChange={onValChange} />

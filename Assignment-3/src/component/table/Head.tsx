@@ -1,13 +1,22 @@
-import React from "react";
+import { BsArrowDownUp } from "react-icons/bs";
 
-function Head() {
+type HeadProps = {
+  handleToggle: () => void;
+};
+
+function Head({ handleToggle }: HeadProps) {
   return (
     <thead className="thead">
       <tr className="thead-row">
         <td>
           <input type="checkbox" />
         </td>
-        <td>Customer</td>
+        <td>
+          Customer
+          <i onClick={() => handleToggle()}>
+            <BsArrowDownUp />
+          </i>
+        </td>
         <td>Last seen</td>
         <td>Orders</td>
         <td>Total spent</td>
