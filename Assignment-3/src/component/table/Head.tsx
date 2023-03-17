@@ -13,7 +13,7 @@ function Head({ handleToggle }: HeadProps) {
         </td>
         <td>
           Customer
-          <i onClick={() => handleToggle()}>
+          <i className="sort" onClick={() => handleToggle()}>
             <BsArrowDownUp />
           </i>
         </td>

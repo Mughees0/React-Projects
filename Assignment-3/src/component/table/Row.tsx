@@ -13,7 +13,7 @@ function Profile({ data }: { data: Customers }) {
 
 function RowData({ d }: { d: Customers }) {
   return (
-    <tr key={d.name} className="tbody-row">
+    <>
       <td>
         <input type="checkbox" />
       </td>
@@ -24,7 +24,7 @@ function RowData({ d }: { d: Customers }) {
       <td>{d.latestPurchase}</td>
       <td>{d.news}</td>
       <td className="btn">{d.segments}</td>
-    </tr>
+    </>
   );
 }
 
@@ -35,10 +35,18 @@ function Row({ data, toggle }: { data: Customers[]; toggle: boolean }) {
         {toggle
           ? data
               .sort((a, b) => a.name.localeCompare(b.name))
-              .map((d) => <RowData d={d} />)
+              .map((d) => (
+                <tr key={d.name} className="tbody-row">
+                  <RowData d={d} />
+                </tr>
+              ))
           : data
               .sort((a, b) => -1 * a.name.localeCompare(b.name))
-              .map((d) => <RowData d={d} />)}
+              .map((d) => (
+                <tr key={d.name} className="tbody-row">
+                  <RowData d={d} />
+                </tr>
+              ))}
       </tbody>
     </>
   );
